@@ -21,7 +21,6 @@ $ docker-compose up -d
 Após este processo, o back-end da aplicação estará disponível em: http://localhost:3030.
 
 ### Front-end:
-
 ```
 # acesse o diretório do frontend
 
