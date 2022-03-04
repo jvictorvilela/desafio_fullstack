@@ -1,4 +1,4 @@
 FROM node:17-alpine
 WORKDIR /usr/node
-EXPOSE 3030
-CMD npm run dev
+EXPOSE 3000
+CMD npm start

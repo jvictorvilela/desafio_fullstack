@@ -9,14 +9,13 @@ const app = express()
 //     res.json('teste')
 // })
 
+if (process.env.APP_ENV == 'development') {
+    app.use(cors())    
+}
+
 app.use(express.json())
 app.use('/playlist', PlaylistRoutes)
 
-if (process.env.APP_ENV == 'development') {
-    app.use(cors({
-        credentials: true,
-        origin: 'http://localhost:'+process.env.APP_PORT}))    
-}
 
 app.listen(process.env.APP_PORT)
 
